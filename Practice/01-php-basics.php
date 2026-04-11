@@ -17,9 +17,7 @@ $user = [
 // store age in one clearly named variable
 $justinAge = 20;
 
-/**
- * return a greeting message for a given name
- */
+// return a greeting message for a given name
 function greet(string $name): string
 {
     return "Hello, " . $name;
