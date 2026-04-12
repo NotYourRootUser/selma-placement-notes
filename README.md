@@ -7,10 +7,12 @@ This repository tracks my prep work before starting placement with Selma. The go
 
 ## Current focus areas
 - PHP syntax and fundamentals
+- arrays, conditionals, loops, and functions
 - classes and objects in PHP
+- local PHP setup and testing
 - LAMP stack basics
 - Symfony structure and request flow
-- small practice files and local testing
+- route, controller, and service flow simulation
 
 ## Structure
 ```text
@@ -19,5 +21,35 @@ Practice/
 screenshots/
 ```
 
-## Notes
+## Folder guide
+
+### Notes
+Learning notes and concept maps, including:
+- PHP basics
+- Symfony request flow
+- setup tracking
+
+### Practice
+Small PHP exercises and demos used to simulate:
+- basic PHP syntax
+- route behavior
+- controller flow
+- service and business logic flow
+
+### Screenshots
+Screenshots showing setup progress, browser output, and practice results.
+
+## Current repo status
 This repo is a prep space, so it contains learning notes, small exercises, and setup tracking rather than a polished production project.
+
+## Current practice files
+- `index.php`
+- `01-php-basics.php`
+- `route-demo.php`
+- `controller-demo.php`
+- `service-demo.php`
+
+## Current note files
+- `php-basics-1.md`
+- `symfony-map.md`
+- `setup-log.md`
