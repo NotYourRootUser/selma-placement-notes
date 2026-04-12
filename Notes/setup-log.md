@@ -31,34 +31,14 @@ Track Selma prep environment setup so I know what is installed, what works, what
 ### MySQL
 - Status: Installed
 - Version: 8.0.45
+- Check: `mysql --version`
 - Notes: Service running
 
 ### Apache
 - Status: Installed
 - Version: 2.4.58
+- Check: `apache2 -v`
 - Notes: Installed and running
-
-## Local PHP testing
-
-### PHP built-in server
-- Command used: `php -S localhost:8000`
-- Result: PHP development server started successfully
-- Learned: PHP files can be served locally without Apache for quick practice
-
-### Routing / file behavior
-- Confirmed: `index.php` loads by default at `/`
-- Confirmed: other PHP files must be visited by filename in the URL
-- Example: `/route-demo.php?page=home`
-
-### Practice files created
-- `route-demo.php`
-- `controller-demo.php`
-- `service-demo.php`
-
-### What each file proved
-- `route-demo.php` = request/query parameter can control page flow
-- `controller-demo.php` = route-like logic can choose which controller function runs
-- `service-demo.php` = controller can call a service to generate a response
 
 ## Problems / blockers
 
@@ -68,12 +48,6 @@ Track Selma prep environment setup so I know what is installed, what works, what
 - Fix: Moved Composer to `/usr/local/bin/composer` and made it executable
 - Result: `composer --version` now works globally
 
-### Problem 2 - controller-demo route mismatch
-- Issue: Default page value did not match conditional checks
-- Cause: Default used lowercase `home` but condition checked `Home`
-- Fix: Change conditions to lowercase for consistency
-- Result: controller-demo route consistent
-
 ## What currently works
 - Git works in terminal
 - VS Code works in terminal
@@ -81,8 +55,6 @@ Track Selma prep environment setup so I know what is installed, what works, what
 - Composer works globally
 - MySQL service is running
 - Apache is installed and running
-- PHP built-in server works for local practice
-- Basic PHP demo files run in browser
 
 ## What still needs checking
 - Apache -> PHP integration with a simple local page
@@ -91,7 +63,7 @@ Track Selma prep environment setup so I know what is installed, what works, what
 - Whether Composer can create and run a Symfony project cleanly
 
 ## Next actions
-1. Retest `controller-demo.php` after lowercase fix
-2. Run one combined PHP demo for route -> controller -> service -> response
-3. Check PHP modules needed for Symfony
+1. Test Apache -> PHP with a simple local page
+2. Check PHP modules needed for Symfony
+3. Test MySQL from a PHP script
 4. Test Composer with a basic Symfony install later
