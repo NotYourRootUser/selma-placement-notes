@@ -53,3 +53,4 @@ This repo is a prep space, so it contains learning notes, small exercises, and s
 - `php-basics-1.md`
 - `symfony-map.md`
 - `setup-log.md`
+- `php-local-testing-notes.md`
