@@ -28,6 +28,12 @@ A service contains reusable business logic that should stay outside the controll
 ### Template / View
 A template displays data to the user, usually as HTML.
 
+### Entity
+An entity is a PHP class that represents one piece of application data, such as a user, note, or report record.
+
+### Repository
+A repository handles loading data for an entity, usually from the database.
+
 ### Database
 The database stores application data and supports reads and writes.
 
@@ -37,10 +43,26 @@ Configuration and environment variables control how the app behaves, including d
 ## Plain PHP vs Symfony
 
 ### Plain PHP
-URL -> PHP file -> output
+URL -> PHP file -> logic + output
 
 ### Symfony
 URL -> route -> controller -> service -> response
+
+## Bridge from my PHP projects
+
+### In my plain PHP projects
+- `index.php`, `notes-by-status.php`, and `student-view.php` act like simple route targets
+- the top PHP logic in each page acts like controller logic
+- `functions.php` acts like helper or service-style logic
+- the HTML output section acts like a simple view/template
+- `StudentNote.php` acts like a domain/model-style class
+
+### In Symfony
+- routes point to controllers
+- controllers handle the request
+- services hold reusable logic
+- templates render the response
+- entities and repositories structure the data layer more clearly
 
 ## Folder / codebase concepts to recognize
 - routes
@@ -66,6 +88,11 @@ These PHP demo files helped simulate Symfony concepts:
 - `route-demo.php` = query parameter decides which page is shown
 - `controller-demo.php` = route-like check chooses which controller function runs
 - `service-demo.php` = controller function calls a service class to generate the response
+
+The student notes projects also helped build the bridge:
+- plain PHP student notes summary = procedural PHP flow
+- student notes OOP viewer = objects, methods, and request-based output
+- next step = understanding how Symfony formalizes those ideas into a framework structure
 
 ## What I want to recognize in Selma's codebase
 - where routes are defined
