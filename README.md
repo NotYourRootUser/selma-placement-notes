@@ -1,55 +1,58 @@
-# selma-php-prep
+# selma-placement-notes
 
-Prep notes, diagrams, and small PHP practice files for ramping into PHP, LAMP, and Symfony before starting my Selma placement.
+Personal notes, Symfony learning logs, diagrams, and sanitized technical reflections from my Selma placement.
 
 ## Purpose
-This repository tracks my prep work before starting placement with Selma. The goal is to build enough familiarity with PHP, Apache, MySQL, and Symfony to start with better technical context, stronger backend fundamentals, and a clearer mental model of how the stack works.
+This repository tracks my technical learning and placement progression during my time with Selma. The goal is to strengthen my understanding of PHP, Symfony, request/response flow, backend architecture, and day-to-day development concepts while building a clear personal record of what I am learning.
 
 ## Current focus areas
-- PHP syntax and fundamentals
-- arrays, conditionals, loops, and functions
-- classes and objects in PHP
-- local PHP setup and testing
-- Apache request handling
-- LAMP stack basics
-- Symfony structure and request flow
-- route, controller, and service flow simulation
-- diagrams for client/server and request/response flow
-- where MySQL fits in the request lifecycle
+- Symfony framework fundamentals
+- routing, controllers, and responses
+- Twig templates and layout inheritance
+- controller -> template -> browser flow
+- JSON responses and API basics
+- model objects and serializer concepts
+- PHP syntax and object-oriented programming
+- request/response lifecycle
+- debugging tools and profiler usage
+- diagrams and compressed notes for revision
+- translating company exposure into personal learning notes
 
 ## Structure
 ```text
 Notes/
 Practice/
-screenshots/
+Screenshots/
 README.md
 ```
 
 ## Folder guide
 
 ### Notes
-Learning notes, concept maps, and architecture diagrams, including:
-- PHP basics
-- where PHP runs in a web request
-- Apache request handling
-- where MySQL fits in a PHP application
-- request → app → DB → response flow
-- local PHP testing notes
-- Symfony request flow
-- setup tracking
+Personal learning notes, revision summaries, concept maps, and technical breakdowns, including:
+- Symfony fundamentals
+- routing and controller flow
+- Twig and rendering
+- request -> controller -> response flow
+- JSON and API concepts
+- serializer notes
+- PHP and OOP revision
+- setup logs
+- daily placement learning summaries
 
 ### Practice
-Small PHP exercises and demos used to practice:
-- basic PHP syntax
+Small personal exercises and demos used to reinforce concepts such as:
+- PHP syntax
+- Symfony controller flow
 - route behavior
-- controller flow
-- service and business logic flow
+- template rendering
+- object and service practice
 
 ### Screenshots
-Screenshots showing setup progress, browser output, diagram work, and practice results.
+Screenshots showing personal setup progress, browser output, learning checkpoints, and non-confidential practice results.
 
-## Current repo status
-This repo is a prep space rather than a production application. It contains study notes, diagrams, small PHP exercises, and setup tracking to build confidence before placement.
+## Repo status
+This repo is a personal placement learning space rather than a production application. It contains personal notes, revision material, diagrams, small practice files, and structured learning summaries built during my Symfony and PHP ramp-up.
 
 ## Current practice files
 - `index.php`
@@ -74,13 +77,13 @@ This repo is a prep space rather than a production application. It contains stud
 - `mysql-in-php-request-flow-diagram.png`
 
 ## What I am trying to understand
-- where PHP runs
-- what Apache / the web server does
-- where MySQL fits
-- the difference between static files and PHP files
-- how HTTP requests and responses move through the stack
-- how request → app → DB → response works
-- how Symfony concepts map onto plain PHP flow
+- how Symfony handles a request from URL to response
+- how routes, controllers, Twig templates, and responses connect
+- how JSON/API responses fit into Symfony applications
+- how model objects and serializers work
+- how PHP and OOP concepts appear inside real framework code
+- how debugging tools help inspect application flow
+- how to turn placement exposure into reusable personal understanding
 
 ## Notes
-This repository is intentionally simple and learning-focused. The goal is not to build a full application yet, but to strengthen the mental model needed to work more confidently with PHP and Symfony in a real placement environment.
+This repository is intentionally simple and learning-focused. The goal is not to mirror company work, but to strengthen the mental model needed to work more confidently with PHP and Symfony in a real placement environment while keeping a clean record of technical growth.
