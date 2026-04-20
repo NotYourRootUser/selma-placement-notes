@@ -1,6 +1,6 @@
 # Where MySQL Fits
 
-![MySQL in PHP request flow](./mysql-in-php-request-flow-diagram.png)
+![MySQL in PHP request flow](../Diagrams/mysql-in-php-request-flow-diagram.png)
 
 This diagram shows where MySQL fits in a PHP web application request. The browser sends an HTTP request to the web server, and the web server passes the request to PHP. PHP is the part of the application that decides what to do next.
 

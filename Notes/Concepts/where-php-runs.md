@@ -1,6 +1,6 @@
 # Where PHP Runs
 
-![Where PHP Runs](./%20where-php-runs-diagram.png)
+![Where PHP Runs](../Diagrams/%20where-php-runs-diagram.png)
 
 This diagram shows how a PHP web request works. The browser sends an HTTP request to the server. The web server (Apache or Nginx) receives that request and passes it to PHP. PHP runs on the server, not in the browser. PHP may talk to a MySQL database if needed, then creates an HTML or JSON response and sends it back to the browser.
 

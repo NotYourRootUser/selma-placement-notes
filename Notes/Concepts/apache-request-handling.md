@@ -1,6 +1,6 @@
 # Apache Request Handling
 
-![Apache request handling diagram](./apache-request-handling-diagram.png)
+![Apache request handling diagram](../Diagrams/apache-request-handling-diagram.png)
 
 This diagram shows how a web server such as Apache or Nginx handles different types of requests from the browser. When the browser sends an HTTP request, the web server checks what kind of file is being requested.
 
